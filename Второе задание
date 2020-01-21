@@ -1,0 +1,4 @@
+SELECT Topic, TagText 
+FROM Article a 
+LEFT JOIN Article2Tag at on at.IdArticle = a.Id
+LEFT JOIN Tag t on at.IdTag = t.Id
